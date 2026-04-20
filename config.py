@@ -1,7 +1,3 @@
-LOG_DIR = "/home/USER/bluetooth_logs"
-MODEL = "llama3"
-OLLAMA_URL = "http://localhost:11434/api/generate"
-
 SUMMARY_TEMPLATE = """
 You are a Bluetooth security analyst.
 
@@ -23,3 +19,11 @@ Top devices:
 Observations:
 Risk level:
 """
+import os
+
+class Settings:
+    DB_URL = f"postgresql://{os.getenv('POSTGRES_USER')}:{os.getenv('POSTGRES_PASSWORD')}@{os.getenv('POSTGRES_HOST')}/{os.getenv('POSTGRES_DB')}"
+    SCAN_INTERVAL = int(os.getenv("SCAN_INTERVAL_MINUTES", 15))
+    OLLAMA_HOST = os.getenv("OLLAMA_HOST")
+
+settings = Settings()

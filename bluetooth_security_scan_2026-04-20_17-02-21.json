@@ -1,0 +1,86 @@
+{
+ "Timestamp": "2026-04-20T17:00:52.46511024+05:00",
+ "Devices": [
+  {
+   "MAC": "B8:41:D9:FF:B4:A4",
+   "Name": "Bluedroid TV 1.0",
+   "RiskLevel": "MEDIUM",
+   "Vulnerabilities": [
+    {
+     "Name": "Audio Streaming",
+     "Severity": "LOW",
+     "Description": "Audio service allows unauthorized streaming",
+     "CVE": ""
+    },
+    {
+     "Name": "Discoverable Mode",
+     "Severity": "LOW",
+     "Description": "Device is discoverable and not paired",
+     "CVE": ""
+    }
+   ],
+   "Recommendations": [
+    "Require pairing for audio connections",
+    "Set device to non-discoverable when not in use",
+    "Set device to non-discoverable mode",
+    "Enable pairing timeout"
+   ],
+   "IsActive": true,
+   "DiscoveryTime": "2026-04-20 17:00:28",
+   "Device": {
+    "MAC": "B8:41:D9:FF:B4:A4",
+    "Name": "Bluedroid TV 1.0",
+    "DeviceClass": "",
+    "Services": [
+     "AV Remote Control Target",
+     "Advanced Audio Source"
+    ],
+    "RSSI": 0,
+    "IsBLE": false,
+    "IsActive": true,
+    "IsPaired": false,
+    "IsSecure": false,
+    "DiscoveryTime": "2026-04-20 17:00:28"
+   },
+   "AssessmentTime": "2026-04-20T17:00:52.465119157+05:00"
+  },
+  {
+   "MAC": "0C:79:55:25:C5:04",
+   "Name": "n/a",
+   "RiskLevel": "LOW",
+   "Vulnerabilities": [
+    {
+     "Name": "Discoverable Mode",
+     "Severity": "LOW",
+     "Description": "Device is discoverable and not paired",
+     "CVE": ""
+    }
+   ],
+   "Recommendations": [
+    "Set device to non-discoverable mode",
+    "Enable pairing timeout"
+   ],
+   "IsActive": true,
+   "DiscoveryTime": "2026-04-20 17:00:29",
+   "Device": {
+    "MAC": "0C:79:55:25:C5:04",
+    "Name": "n/a",
+    "DeviceClass": "",
+    "Services": [],
+    "RSSI": 0,
+    "IsBLE": false,
+    "IsActive": true,
+    "IsPaired": false,
+    "IsSecure": false,
+    "DiscoveryTime": "2026-04-20 17:00:29"
+   },
+   "AssessmentTime": "2026-04-20T17:02:16.155793824+05:00"
+  }
+ ],
+ "Summary": {
+  "TotalDevices": 2,
+  "HighRiskDevices": 0,
+  "MediumRiskDevices": 1,
+  "LowRiskDevices": 1
+ }
+}
