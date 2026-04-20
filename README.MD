@@ -147,6 +147,7 @@ This project focuses on **defensive detection**, not offensive use.
 
 ## 🔐 Philosophy
 
+* **Low IQ peoples don't deserve a freedom**. Low IQ peoples don't need a freedom.  They use freedom for gloryhole creating in walls neibor down(its real story write me @mister_or4nge i tell you about it). I create tools to evade in future low IQ danger in start.
 * **Local-first**: your data never leaves your machine
 * **Transparent**: logs are readable and auditable
 * **Extensible**: modular design
