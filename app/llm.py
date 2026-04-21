@@ -1,5 +1,5 @@
 import requests
-from config import OLLAMA_URL
+from app.config import OLLAMA_URL
 
 def generate_summary(prompt: str, model: str):
     response = requests.post(

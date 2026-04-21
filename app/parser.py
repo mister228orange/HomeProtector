@@ -1,6 +1,6 @@
 import re
 from collections import defaultdict
-from models import Device
+from app.models import Device
 
 DEVICE_REGEX = re.compile(r"Device ([0-9A-F:]{17}) (.+)")
 
