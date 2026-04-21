@@ -42,7 +42,20 @@ services:
       - postgres
       - redis
 
+  scheduler:
+    build: .
+    container_name: bluetooth-scheduler
+    restart: unless-stopped
+    depends_on:
+      - redis
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    command: python -m app.scheduler
+    network_mode: host            # Not strictly needed for scheduler
+      # No privileged required
+
 volumes:
   pgdata:
   ollama:
+  scans:
   
